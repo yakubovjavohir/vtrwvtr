@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car-create</title>
+    <link rel="stylesheet" href="/css/car-change.css">
+</head>
+<body>
+    <header>
+        <a class="a" href="/home">Car-products</a>
+        <a class="a" href="/car-create">Car-create</a>
+        <a class="a" href="/car-delete">Car-delete</a>
+        <a class="a text-border" href="/car-change">Car-change</a>
+    </header>
+    <div class="body">
+        <form action="/car-change-price" method="post">
+            <label for="">Car-change</label>
+            <input type="text" placeholder="car-name" required name="car_name_change"> <!--car-name orqali nomini topadi va price ni ozgartradi-->
+            <input type="number" placeholder="car-price" required name="car_price_change">
+            <input type="submit">
+        </form>
+        <div class="block">
+            <% if(message) { %>
+                <p style="padding-left: 140px; font-size: 25px; padding-top: 10px;">malumotlar yangilandi</p>
+                <div class="new-block">
+                    <p class="st">{</p><br>
+                        <div class="backend_code"><p class="text-green">"name" <p>:</p> <p class="text-orange">"<%= message.name %>"</p></p></div>
+                        <div class="backend_code"><p class="text-green">"year" <p>:</p> <p class="text-orange"><%= message.year %></p></p></div>
+                        <div class="backend_code"><p class="text-green">"new-price" <p>:</p> <p class="text-orange"><%= message.price %></p></p><br></div>
+                    <p class="st">}</p> 
+                </div>   
+            <% } else { %>
+                <p style="padding-left: 140px; padding-top: 170px;">malumotlar mavjud emas</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

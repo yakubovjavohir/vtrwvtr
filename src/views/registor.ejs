@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registor</title>
+    <link rel="stylesheet" href="/css/registor.css">
+</head>
+<body>
+    <form action="/registor" method="post">
+        <label for=""><a href="/" style="padding-right: 70px; text-decoration: none; color: white;"><--</a><p style="padding-right: 130px;">Registor</p></label><br>
+        <input type="email" placeholder="email" required name="email"><br>
+        <input type="text" placeholder="username" required name="username"><br>
+        <input type="password" placeholder="password" required name="password"><br>
+        <input type="password" placeholder="comfir-password" required name="comfirm_password"><br>
+        <% if(message) { %>
+            <p style="color: white; padding-left: 70px;"><%= message.comfirm_password %></p>
+        <% } %>
+        <input type="submit">
+    </form>
+</body>
+</html>

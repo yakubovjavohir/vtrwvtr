@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-database</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+        <header>
+            <a class="a text-border" href="">Car-products</a>
+            <a class="a" href="/car-create">Car-create</a>
+            <a class="a" href="/car-delete">Car-delete</a>
+            <a class="a" href="/car-change">Car-change</a>
+        </header>
+        
+        <div class="block">
+            <div class="car-getAll">
+                <% if(message) { %>
+                    <p style="padding-left: 45%; font-size: 50px; padding-top: 10px;">database</p>
+                    <% message.forEach((el)=>{ %>
+                                
+                                    <p class="st">{</p><br>
+                                        <div class="backend_code"><p class="text-green">"name" <p>:</p> <p class="text-orange">"<%= el.name %>"</p></p></div>
+                                        <div class="backend_code"><p class="text-green">"year" <p>:</p> <p class="text-orange"><%= el.year %></p></p></div>
+                                        <div class="backend_code"><p class="text-green">"price" <p>:</p> <p class="text-orange"><%= el.price %></p></p><br></div>
+                                    <p class="st">},</p> 
+                                 
+                    <% }) %>
+                <% } %>
+            </div>
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.body {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.text-border {
+    border-bottom: 2px solid white;
+}
+form {
+    width: 500px;
+    height: 380px;
+    background-color: brown;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px white;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.block {
+    width: 500px;
+    height: 380px;
+    background-color: black;
+}
+.new-block {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+p {
+    color: white;
+    font-size: 25px;
+}
+
+.st {
+    width: 100%;
+    height: 3vh;
+    margin-top: 3vh;
+}
+.text-green{
+    color: green;
+    text-align: end;
+    width: 40%;
+    font-size: 20px;
+}
+.text-orange {
+    color: orange;
+    text-align: start;
+    width: 40%;
+    font-size: 20px;
+}
+.backend_code {
+    width: 100%;
+    height: 3vh;
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
